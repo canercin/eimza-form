@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NgForm} from '@angular/forms';
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {Customer} from "./info";
 
 @Component({
@@ -17,7 +17,7 @@ export class InformationComponent {
     // E-imza başvuru formundaki bilgiler alınıyor.
     const customer: Customer = new Customer(form.value);
     // İşlem yapmak için statik olarak tanımlanan email adresi.
-    const companyRefId: string = "2184d1d0-502a-4162-87ba-bc3f6975e416";
+    const companyRefId: string = "";
 
     // Kimin başvuru linkine tıklandığını tespit etmek amacıyla URL'de bulunan belirteci yakalanıyor.
     const queryString = window.location.search;
