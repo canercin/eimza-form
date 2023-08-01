@@ -35,4 +35,6 @@ export class Customer {
     this.setYear = data.setYear;
     this.message = data.message;
   }
+
+  //customer model
 }
